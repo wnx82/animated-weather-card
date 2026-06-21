@@ -1,0 +1,10 @@
+{
+  "name": "Animated Weather Scene Card",
+  "content_in_root": false,
+  "filename": "animated-weather-scene-card.js",
+  "issue_tracker": "https://github.com/wnx82/animated-weather-card/issues",
+  "release": "https://github.com/wnx82/animated-weather-card/releases",
+  "zip_release": false,
+  "render_readme": true,
+  "type": "plugin"
+}

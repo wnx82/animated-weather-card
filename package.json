@@ -1,0 +1,29 @@
+{
+  "name": "animated-weather-scene-card",
+  "version": "1.0.0",
+  "description": "Carte Lovelace minimaliste pour Home Assistant avec image de fond, lieu et température.",
+  "author": "wnx82",
+  "license": "MIT",
+  "keywords": [
+    "home-assistant",
+    "lovelace",
+    "weather",
+    "custom-card",
+    "hacs"
+  ],
+  "main": "animated-weather-scene-card.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wnx82/animated-weather-card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wnx82/animated-weather-card/issues"
+  },
+  "homepage": "https://github.com/wnx82/animated-weather-card",
+  "hacs": {
+    "name": "Animated Weather Scene Card",
+    "type": "frontend",
+    "description": "Carte Lovelace avec fond météo animé, lieu et température.",
+    "render_readme": true
+  }
+}
