@@ -1,10 +1,11 @@
 {
   "name": "Animated Weather Scene Card",
-  "content_in_root": false,
+  "content_in_root": true,
   "filename": "animated-weather-scene-card.js",
+  "homeassistant": "2024.1.0",
   "issue_tracker": "https://github.com/wnx82/animated-weather-card/issues",
   "release": "https://github.com/wnx82/animated-weather-card/releases",
-  "zip_release": false,
+  "zip_release": true,
   "render_readme": true,
-  "type": "plugin"
+  "type": "frontend"
 }
