@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preview Animated Weather Scene Card</title>
+  <style>
+    body { margin: 0; padding: 24px; min-height: 100vh; background: #111827; color: white; font-family: sans-serif; }
+    .wrapper { max-width: 760px; margin: auto; }
+    .description { margin-bottom: 16px; font-size: 0.95rem; opacity: 0.82; }
+    animated-weather-scene-card { display: block; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="description">Aperçu local de la carte Animated Weather Scene Card avec état météo simulé.</div>
+    <animated-weather-scene-card id="preview-card"></animated-weather-scene-card>
+  </div>
+  <script type="module">
+    import './animated-weather-scene-card.js';
+
+    const card = document.getElementById('preview-card');
+    card.setConfig({
+      type: 'custom:animated-weather-scene-card',
+      entity: 'weather.home',
+      title: 'Paris',
+      height: 280,
+      show_temperature: true,
+      show_condition: true,
+      show_forecast: false,
+      use_assets: false,
+      animation_speed: 'normal',
+      radius: 24,
+      text_color: '#ffffff',
+      overlay: true
+    });
+
+    const hass = {
+      states: {
+        'weather.home': {
+          entity_id: 'weather.home',
+          state: 'sunny',
+          attributes: {
+            friendly_name: 'Paris',
+            temperature: 22,
+            temperature_unit: 'C'
+          }
+        }
+      },
+      config: {
+        unit_system: { temperature: 'C' }
+      }
+    };
+
+    setTimeout(() => {
+      card.hass = hass;
+    }, 100);
+  </script>
+</body>
+</html>
